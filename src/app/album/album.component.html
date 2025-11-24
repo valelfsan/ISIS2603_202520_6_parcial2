@@ -1,0 +1,14 @@
+<h2>Álbumes</h2>
+
+<div class="albums-container">
+  <div 
+    *ngFor="let album of albums" 
+    class="album-card"
+    (click)="seleccionarAlbum(album)">
+    <img [src]="album.image" [alt]="album.name">
+    <div class="album-info">
+      <strong>{{ album.name }}</strong>
+      <span>{{ album.year }}</span>
+    </div>
+  </div>
+</div>

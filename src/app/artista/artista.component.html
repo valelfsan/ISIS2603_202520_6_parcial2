@@ -1,0 +1,9 @@
+<div class="artistas-container">
+  <div 
+    *ngFor="let artista of artistas" 
+    class="artista-card"
+    (click)="seleccionarArtista(artista)">
+    <img [src]="artista.image" [alt]="artista.name">
+    <p>{{ artista.name }}</p>
+  </div>
+</div>
